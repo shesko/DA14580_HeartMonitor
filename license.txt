@@ -1,0 +1,70 @@
+BLE LICENSES
+
+NAME                    LICENSE FILE PATH                                               LICENSE                   COMMENTS
+-------------------------------------------------------------------------------------------------------------------------
+DA14580 apllication     dk_apps\src\modules\app\src\app_proxr.c                         Dialog Semiconductor Ltd
+                        dk_apps\src\modules\app\src\app_proxr_task.c
+                        dk_apps\src\modules\app\src\app_proxr_proj_task.c
+                        dk_apps\src\modules\app\src\app_proxr_proj.c
+                        dk_apps\src\modules\app\src\app_button_led.c
+                        dk_apps\src\modules\app\src\app_batt.c
+                        dk_apps\src\modules\app\src\app_batt_task.c
+                        dk_apps\src\modules\app\src\app_batt_adc.c
+                        dk_apps\src\modules\app\src\app_findme.c
+                        dk_apps\src\modules\app\src\app_findme_task.c
+                        dk_apps\src\modules\app\src\app_keyboard.c
+                        dk_apps\src\modules\app\src\app_keyboard_proj.c
+                        dk_apps\src\modules\app\src\app_keyboard_proj_task.c
+                        dk_apps\src\modules\app\src\app_sleep.c
+                        dk_apps\src\modules\app\src\app_utils.c
+-------------------------------------------------------------------------------------------------------------------------
+Application API         dk_apps\src\modules\app\src\app.c                               RivieraWaves
+                        dk_apps\src\modules\app\src\app_sec.c
+                        dk_apps\src\modules\app\src\app_sec_task.c
+                        dk_apps\src\modules\app\src\app_task.c
+                        dk_apps\src\modules\app\src\app_dis.c
+                        dk_apps\src\modules\app\src\app_dis_task.c
+                        dk_apps\src\modules\app\src\app_display.c
+                        dk_apps\src\modules\app\src\app_ht.c
+                        dk_apps\src\modules\app\src\app_ht_task.c
+                        dk_apps\src\modules\app\src\app_neb.c
+                        dk_apps\src\modules\app\src\app_neb_task.c
+                        dk_apps\src\modules\app\src\app_accel.c
+                        dk_apps\src\modules\app\src\app_custom_accel.c
+                        dk_apps\src\modules\app\src\app_accel_task.c
+                        dk_apps\src\modules\app\src\app_task_accel.c
+-------------------------------------------------------------------------------------------------------------------------
+UART driver             dk_apps\src\plf\refip\src\driver\uart                           RivieraWaves		
+GPIO driver             dk_apps\src\plf\refip\src\driver\gpio                           Creative Commons          http://creativecommons.org/licenses/by/3.0/legalcode
+CMSIS Cortex-M0         dk_apps\src\plf\refip\src\arch\boot\rvds\system_ARMCM0.c        ARM Limited
+Boot Cortex-M0          dk_apps\src\plf\refip\src\arch\boot\rvds\boot_vectors.s         ARM Limited
+Main loop               dk_apps\src\plf\refip\src\arch\main                             Dialog Semiconductor Ltd
+Kernel                  dk_apps\src\modules\ke\src\ke_task.c                            RivieraWaves
+NVDS                    dk_apps\src\modules\nvds\src\nvds.c                             RivieraWaves
+RF driver               dk_apps\src\modules\rf                                          Dialog Semiconductor Ltd
+RW IP                   dk_apps\src\modules\rwip                                        RivieraWaves
+RW Profiles             dk_apps\src\ip\ble\hl\src\profiles                              RivieraWaves
+RW BLE                  dk_apps\src\ip\ble\ll\src\rwble\rwble.c                         RivieraWaves
+Host PROX Applications  host_apps\windows\proximity                                     Dialog Semiconductor Ltd 
+CRC32                   tools\flash_programmer\src\crc32.c                              COPYRIGHT (C) 1986 Gary S. Brown 
+-------------------------------------------------------------------------------------------------------------------------
+Docking Frames 1.1.1	tools\smart_snippets                                            GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+jCommon 1.0.18          tools\smart_snippets                                            GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+jFreeChart 1.0.14       tools\smart_snippets                                            GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+RxTx 2.1                tools\smart_snippets                                            GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+                                                                                        Linking Over Controlled Interface. Copyright 1997-2007 by Trent Jarvi
+JNA 4.0.0               tools\smart_snippets                                            GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+JavaFTD2XX 0.2.6        tools\smart_snippets                                            The MIT License (MIT) Copyright 2011 Peter Kocsis 
+SwingLayout 1.0.2       tools\smart_snippets                                            GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+IZpack 4.3.5            tools\smart_snippets                                            Apache License Version 2.0, January 2004
+launch4j 3.0.2          tools\smart_snippets                                            The BSD 2-Clause License Copyright (c) 2004, 2011 Grzegorz Kowal
+                                                                                            The MIT License (MIT) Copyright (c) 2004, 2011 Grzegorz Kowal
+yguard 2.4              tools\smart_snippets                                            yGuard Software License Agreement, version 1.0, October 2002
+                                                                                            1.Retroguard Licence: GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+                                                                                            2.Retrotranslator Licence: Copyright (c) 2005, 2006 Taras Puchko
+                                                                                            3.ASM License: Copyright (c) 2000-2005 INRIA, France Telecom
+IntelHexFileParser      tools\smart_snippets                                            GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+DouglasPeucker          tools\smart_snippets                                            GNU LESSER GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+axTLS  					tools\secondary_bootloader										3-clause BSD
+axTLS  					tools\mkimage													3-clause BSD
+

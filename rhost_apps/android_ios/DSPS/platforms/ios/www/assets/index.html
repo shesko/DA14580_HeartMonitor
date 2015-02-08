@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en" manifest="offline.manifest">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.min.css">
+<link rel="stylesheet" type="text/css" href="css/clear.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+
+<script type="text/javascript" src="js/org.underscorejs.underscore/underscore.js"></script>
+<script type="text/javascript" src="js/org.bcsphere.bluetooth/bluetoothapi.js"></script>
+<script type="text/javascript" src="js/org.bcsphere/bc.js"></script>
+<script type="text/javascript" src="js/com.dialog-semiconductor/serial_port_service.js"></script>
+<script type="text/javascript" src="js/com.dialog-semiconductor/serial_port_profile.js"></script>
+<script type="text/javascript" src="js/LocalFileSystem.js"></script>
+<script type="text/javascript" src="js/fileSystems.js"></script>
+<script type="text/javascript" src="js/fileSystemPaths.js"></script>
+<script type="text/javascript" src="js/File.js"></script>
+<script type="text/javascript" src="js/Flags.js"></script>
+<script type="text/javascript" src="js/FileUploadOptions.js"></script>
+<script type="text/javascript" src="js/FileUploadResult.js"></script>
+<script type="text/javascript" src="js/FileError.js"></script>
+<script type="text/javascript" src="js/Metadata.js"></script>
+<script type="text/javascript" src="js/ProgressEvent.js"></script>
+<script type="text/javascript" src="js/ios/FileSystem.js"></script>
+<script type="text/javascript" src="js/Entry.js"></script>
+<script type="text/javascript" src="js/DirectoryEntry.js"></script>
+<script type="text/javascript" src="js/FileSystem.js"></script>
+<script type="text/javascript" src="js/fileSystems-roots"></script>
+<script type="text/javascript" src="js/DirectoryReader.js"></script>
+<script type="text/javascript" src="js/FileWriter.js"></script>
+<script type="text/javascript" src="js/FileEntry.js"></script>
+<script type="text/javascript" src="js/FileReader.js"></script>
+<script type="text/javascript" src="js/requestFileSystem.js"></script>
+<script type="text/javascript" src="js/resolveLocalFileSystemURI.js">
+</script><script type="text/javascript" src="js/org.bcsphere.cordova.utilities/bcutility.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>	
+	window.onload=function(){
+		app.initialize();
+	}
+	</script>
+</head>
+<body>
+<div class="scanPage" id="scanPage" data-role="page">
+	<div id='deviceWrap'>
+		<div class="searchRotate" >
+			<img src="img/searchRotate.png" alt=""> 
+			<span>searching...</span>
+			<i class="exitBtn" onclick="app.scanPageExit()"></i>
+		</div>
+		<div class="aperture" id="circlePic">
+			<img id="aperture" src="img/aperture.png">
+			<span>Searching...</span>
+		</div>		
+		<div class="itemWrap" id='deviceList'>
+			<div class="item clearfix" id='deviceItem' style="position: relative;display: none;">
+				<div class="singal">
+					<img src="img/singal_default.png" alt="">
+					<div class="wrap_active">
+					<img src="img/singal_active.png" alt="">
+					</div>
+				</div>
+				<div class="deviceInfo">
+					<div class="deviceName">
+						<span id='deviceName'></span>
+					</div>
+					<div class="deviceAddress">DA :<span id="deviceAddress"></span></div>
+				</div>
+				<img src="img/arrow.png">
+			</div>
+		</div>
+		<div class="search">
+			<img src="img/reloadBtn.png" id='reload' alt="">
+			<div class="searchText">search again</div>
+		</div>
+	</div>
+</div>
+<div class = "mainPage" id="mainPage" data-role="mainPage">
+	<div class="navigation-bar">
+  		<div class="navigation-bar__left">
+		    <label class="back_icon_wrap" onclick="app.backToScanPage();app.scanPageDisconnect()">
+		    	<i class="back_icon"></i>
+		    </label>
+	  	</div>
+
+		<div class="navigation-bar__center">
+			<div class="deviceName">none</div>
+			<div class="deviceAddress">none</div>  
+		</div>
+
+		<div class="navigation-bar__right">
+			<i class="connectStatus disconnected"></i>
+		</div>
+	</div>
+
+	<div class="tab">
+		<div class="tabContent selected">	
+			<div class="showConsoleMode">Receive Console Mode Data</div>
+			<div class="inputInfo">
+				<textarea id="consoleModeData" data-role="none" readonly></textarea>
+			</div>
+			<div class="btn">
+				<div class="radioBtn">
+					<span class="console" >
+						<input type="radio" name="charType" data-role="none" checked="checked" ><i class="active"></i>ASCII
+					</span>
+					<span class="console">
+						<input type="radio" name="charType" data-role="none" id="consolerxHex"><i class="addLeft"></i>HEX
+					</span>
+				</div>
+			</div>
+			<div class="showConsoleMode">Send Console Mode Data</div>
+			<div class="inputInfo">
+				<textarea id="consoleMode" data-role="none"></textarea>
+			</div>
+			<div class="btn">
+				<div class="radioBtn">
+					<span class="console" >
+						<input type="radio" name="charType" checked="checked" data-role="none"><i class="active"></i>ASCII
+					</span>
+					<span class="console">
+						<input type="radio" name="charType" id="consoleTxHex" data-role="none"><i class="addLeft"></i>HEX
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="tabContent">
+			<div class="inputInfo">
+				<textarea id="showData" data-role="none" readonly></textarea>
+			</div>
+			<div class="btn">
+				<div class="radioBtn">
+					<span class="control">
+						<input type="radio" name="charType" id="ASCII1" data-role="none" checked="checked"><i class="active"></i>ASCII
+					</span>
+					<span class="control">
+						<input type="radio" name="charType" id="RxHex" data-role="none" ><i class="addLeft"></i>HEX
+					</span>
+				</div>
+				<div class="sendBtn">
+					<div class="send" onclick="app.clearShowData()">clear</div>
+				</div>	
+				<div class="sendBtn">
+					<div class="send" onclick="app.onStopReceive()">stop</div>
+				</div>
+				<div class="sendBtn">
+					<div class="send" onclick="app.onStartReceive()">start</div>
+				</div>
+			</div>
+
+			<div class="inputInfo">
+				<textarea id="WriteValue" data-role="none"></textarea>
+			</div>
+			<div class="btn">
+				<div class="radioBtn">
+					<span class="control" >
+						<input type="radio" name="charType" id="ASCII2" data-role="none"  checked="checked"><i class="active"></i><span>ASCII</span>
+					</span>
+					<span class="control">
+						<input type="radio" name="charType" data-role="none"  id="TxHex"><i class="addLeft"></i>HEX
+					</span>
+				</div>
+				<div class="selectBtn">
+					<span class="sendInterval">
+						<input type="checkbox" name="charType" style="display:none" id="cycleSend">
+						<i></i>
+						<span class="cycleSend">cyclic sending interval</span>
+						<input type="text" value="200" class="default" data-role="none" id="interval" >
+						<span>ms</span>
+					</span>
+				</div>
+				<div class="sendBtn">
+					<div class="send" onclick="app.onSend()">send</div>
+				</div>
+				<div class="sendBtn">
+					<div class="send" onclick="app.onStop()">stop</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tabContent">
+			<div class="fileStreaming">Data File Streaming</div>
+			<input type="text" id="connectionInterval" placeholder="Connection Interval*1.25ms"/>
+			<!-- <div class="outerLine" id="outerLine">
+				<div class="innerLine" id="innerLine"></div>
+			</div> -->
+			<div class="sendBtn" id="Directory">
+				<div class="send">doDirectoryListing</div>
+			</div>
+
+			<div id="content">
+				<ul id="fileList"></ul>
+			</div>
+		</div>
+
+		<div class="tabContent">
+			<div id="DSPSinfo">
+				<div class="about">Dialog-Semiconductor</div>
+				<div class="about">DA14580 Serial Port Service</div>
+				<div class="DSPS">
+					<img src="img/DSPS.png" alt="">
+				</div>
+				<div class="about">Version:1.1.0</div>
+				<div class="about">Http://www.dialog-semiconductor.com</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="tab_bar">
+		<ul class="tabOption">
+			<li class="selectedLi">Console</li>
+			<li class="defaultLi">RX/TX</li>
+		    <li class="defaultLi">File</li>
+		    <li class="defaultLi">About</li> 
+		</ul>
+	</div>
+</div>
+</body>
+</html> 
+<script type="text/javascript">
+
+$(".tabOption>li").click(function(){
+	$(this).removeClass("defaultLi").addClass("selectedLi").siblings().removeClass("selectedLi").addClass("defaultLi");
+	var nIndex=$(this).index();
+	$(".tab>.tabContent").removeClass("selected").eq(nIndex).addClass("selected");
+})
+$(".radioBtn>.control").click(function(){
+	$(this).siblings().children("input").removeAttr("checked");
+	$(this).children("input").attr("checked","checked");
+	$(this).siblings().children("i").removeClass("active")
+	$(this).children("i").addClass("active");
+})
+$(".radioBtn>.console").click(function(){
+	$(this).siblings().children("input").removeAttr("checked");
+	$(this).children("input").attr("checked","checked");
+	$(this).siblings().children("i").removeClass("active")
+	$(this).children("i").addClass("active");
+})
+var flag=false;
+$(".sendInterval").click(function(e){
+	if(e.target.nodeName.toLowerCase()=="i"||e.target.className=="cycleSend"){
+		if(flag){
+			$(this).children("input[type='checkbox']").removeAttr("checked");
+			$(this).children("i").css({"background":"url('img/check.png')","background-size":"100% 100%"});
+			$(this).children(".sendInterval").removeClass("active");
+			flag=false;
+			document.getElementById("cycleSend").checked=flag;
+		}else{
+			$(this).children("input[type='checkbox']").attr("checked","checked");
+			$(this).children("i").css({"background":"url('img/checked.png')","background-size":"100% 100%"});
+			$(this).children(".sendInterval").addClass("active");
+			flag=true;
+			document.getElementById("cycleSend").checked=flag;
+		}
+	}
+});
+var oSend=document.getElementsByClassName("send");
+for(var i=0;i<oSend.length;i++){
+	oSend[i].addEventListener("touchstart",function(){
+		$(this).addClass("addResponse");
+	},false);
+	oSend[i].addEventListener("touchend",function(){
+		$(this).removeClass("addResponse");
+	},false);
+}
+</script>

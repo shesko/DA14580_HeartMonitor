@@ -1,0 +1,1419 @@
+#############################################################################################
+#
+#  Dialog Semiconductor
+#  Het Zuiderkruis 53
+#  5215 MV 's-Hertogenbosch
+#  The Netherlands
+#
+#  Project: Bluetooth Low Energy (BTLE)
+#  SOFTWARE PLATFORM
+#
+#  Please contact bluetooth.support@diasemi.com for questions and support
+#
+##############################################################################################
+
+#Change log file for BTLE_580 distribution
+#
+-------------------------------------------------------------------------
+#Format of the log entries:
+#
+#Date: DD/MM/YYYY
+#Committed by: user-name
+#Type: FEATURE or MAJOR_RESTRUCTURING or BUG_FIX or TUNING or RELEASE
+#ver: the tagged version where the corresponding changes can be found
+#
+#Files: list of files committed, with full path
+#       (e.g. dk_apps/full_emb.uvproj), each one in separate line.
+#
+#Comment: A brief comment regarding the changes that were committed.
+#
+#---------------------------------------------------------------------------
+===========================================================================
+Date: 16/01/2015
+Committed by: damaskakos manos
+Type: RELEASE
+ver: 3.150.2.18
+#
+#Files
+#
+
+Comment:
+===========================================================================
+Date: 16/01/2015
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.18
+#
+#Files
+#	rhost_apps/bin/iOS/DSPS/DSPS.ipa
+Comment:
+
+      Update installer package (ipa) for iOS DSPS app.
+
+
+===========================================================================
+Date: 16/01/2015
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.17
+#
+#Files
+#	dk_apps/src/modules/app/src/app.c
+#	rhost_apps/android_ios/DSPS/bin/IOS/++++DSPS/DSPS_nosubscribe.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/++++DSPS/DSPS_subscribe.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/BCSphere.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/DSPS_NoSubscribe.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/DSPS_No_Subscribe_Flow.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/DSPS_Subscribe_FllowControl.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/DSPS_With_Subscribe_Flow.ipa
+#	rhost_apps/android_ios/DSPS/platforms/android/AndroidManifest.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/index.html
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/jquery-1.7.1.min.js
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/AndroidManifest.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/DSPS.apk
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/R.txt
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes.dex
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/BuildConfig.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/DSPS.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R$attr.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R$drawable.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R$string.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R$xml.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/ContentFilesystem.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/DirectoryManager.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/EncodingException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileExistsException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileHelper.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$10.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$11.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$12.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$13.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$14.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$15.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$16.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$17.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$18.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$19.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$2.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$20.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$21.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$22.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$23.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$24.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$25.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$3.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$4.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$5.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$6.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$7.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$8.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$9.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$FileOp.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/Filesystem$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/Filesystem$LimitedInputStream.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/Filesystem$ReadFileCallback.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/Filesystem.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/InvalidModificationException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/LocalFilesystem.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/LocalFilesystemURL.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/NoModificationAllowedException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/TypeMismatchException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BCBluetooth$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BCBluetooth$2.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BCBluetooth.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothG43plus$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothG43plus$2.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothG43plus$3.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothG43plus.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSam42$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSam42$2.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSam42$3.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSam42.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService$AcceptThread.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService$ConnectThread.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService$ConnectedThread.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/IBluetooth.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/tools/BluetoothDetection.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/tools/Tools.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/dexedLibs/dsps-cordovalib-4da86096a3b1faeb95502f10c41af1ac.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/dexedLibs/dsps-cordovalib-5692d49c2aa09932ea001537de66dc64.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/dexedLibs/samsung_ble_sdk_200-468f575791c7856279fff2eaaf56e962.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/dexedLibs/samsung_ble_sdk_200-6d871c5b33dcc40d0f1af3b97ff74e07.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/jarlist.cache
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/res/crunch/drawable-xhdpi/icon.png
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/res/crunch/drawable/icon.png
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/resources.ap_
+#	rhost_apps/android_ios/DSPS/platforms/android/libs/dsps-cordovalib.jar
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/project.pbxproj
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/project.xcworkspace/xcuserdata/NPHD.xcuserdatad/UserInterfaceState.xcuserstate
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/DSPS-Info.plist
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/BCBluetooth.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/BCBluetooth.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-568h@2x~iphone.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-Landscape@2x~ipad.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-Landscape~ipad.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-Portrait@2x~ipad.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-Portrait~ipad.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default@2x~iphone.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default~iphone.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/css/clear.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/css/index.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/css/search.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/css/service.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/2.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/active.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/aperture.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/arrow.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/bg.jpg
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/check.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/checked.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/cssSprite.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/default.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/deg.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/left-r.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/reloadBtn.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/searchRotate.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/singal_active.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/singal_default.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/stopSearch.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/index.html
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/js/com.dialog-semiconductor/serial_port_profile.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/js/com.dialog-semiconductor/serial_port_service.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/js/index.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/js/jquery-1.7.1.min.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/DirectoryReader.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/Entry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/File.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileEntry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileError.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileReader.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileUploadResult.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileWriter.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/Flags.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/Metadata.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/ProgressEvent.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystems.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/ios/FileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/requestFileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bcsphere.bluetooth/bluetoothapi.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bcsphere.ibeacon/ibeaconapi.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bcsphere/bc.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bcsphere/ibeacon.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.profile/find_me.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.profile/proximity.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.profile/serial_port.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/battery_service.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/blood_pressure.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/health_thermometer.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/immediate_alert.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/link_loss.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/serial_port.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/tx_power.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.underscorejs.underscore/underscore.js
+#	rhost_apps/android_ios/DSPS/www/css/clear.css
+#	rhost_apps/android_ios/DSPS/www/css/search.css
+#	rhost_apps/android_ios/DSPS/www/css/service.css
+#	rhost_apps/android_ios/DSPS/www/img/2.png
+#	rhost_apps/android_ios/DSPS/www/img/active.png
+#	rhost_apps/android_ios/DSPS/www/img/aperture.png
+#	rhost_apps/android_ios/DSPS/www/img/arrow.png
+#	rhost_apps/android_ios/DSPS/www/img/bg.jpg
+#	rhost_apps/android_ios/DSPS/www/img/check.png
+#	rhost_apps/android_ios/DSPS/www/img/checked.png
+#	rhost_apps/android_ios/DSPS/www/img/cssSprite.png
+#	rhost_apps/android_ios/DSPS/www/img/default.png
+#	rhost_apps/android_ios/DSPS/www/img/deg.png
+#	rhost_apps/android_ios/DSPS/www/img/left-r.png
+#	rhost_apps/android_ios/DSPS/www/img/reloadBtn.png
+#	rhost_apps/android_ios/DSPS/www/img/searchRotate.png
+#	rhost_apps/android_ios/DSPS/www/img/singal_active.png
+#	rhost_apps/android_ios/DSPS/www/img/singal_default.png
+#	rhost_apps/android_ios/DSPS/www/img/stopSearch.png
+#	rhost_apps/android_ios/DSPS/www/js/com.dialog-semiconductor/serial_port_profile.js
+#	rhost_apps/android_ios/DSPS/www/js/com.dialog-semiconductor/serial_port_service.js
+#	rhost_apps/android_ios/DSPS/www/js/jquery-1.7.1.min.js
+#	rhost_apps/bin/android/DSPS/DSPS.apk
+#	tagList.txt
+Comment:
+
+      Android/iOS DSPS app v 1.1.0
+
+
+===========================================================================
+Date: 14/01/2015
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.16
+#
+#Files
+#	rhost_apps/bin/iOS/DSPS.ipa
+#	rhost_apps/bin/iOS/DSPS/DSPS.ipa
+Comment:
+
+        FIX
+        Change folder to DSPS.ipa file
+
+
+===========================================================================
+Date: 14/01/2015
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.15
+#
+#Files
+#	dk_apps/keil_projects/sps/sps_device/sps_device_581.uvopt
+#	dk_apps/keil_projects/sps/sps_device/sps_device_581.uvproj
+#	dk_apps/keil_projects/sps/sps_host/sps_host _581.uvopt
+#	dk_apps/keil_projects/sps/sps_host/sps_host _581.uvproj
+Comment:
+
+      FEATURE
+    
+      Add DA14581 project files
+
+
+===========================================================================
+Date: 14/01/2015
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.14
+#
+#Files
+#	dk_apps_01_09.zip
+#	dk_apps_01_09_II.zip
+#	dk_apps_01_13_before_pull.zip
+#	dk_apps_dsps_12_17.zip
+#	dk_apps_final_test.zip
+#	dk_apps_multiple_baud.zip
+#	dk_apps_v3.150.1.12.zip
+#	rhost_apps_3.150.1.7.zip
+Comment:
+
+      FIX
+    
+
+
+===========================================================================
+Date: 14/01/2015
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.13
+#
+#Files
+#	dk_apps/keil_projects/sps/sps_device/da14580_config.h
+#	dk_apps/keil_projects/sps/sps_device/da14580_stack_config.h
+#	dk_apps/keil_projects/sps/sps_device/sps_device.uvopt
+#	dk_apps/keil_projects/sps/sps_device/sps_device.uvproj
+#	dk_apps/keil_projects/sps/sps_host/da14580_config.h
+#	dk_apps/keil_projects/sps/sps_host/da14580_stack_config.h
+#	dk_apps/keil_projects/sps/sps_host/sps_host.uvopt
+#	dk_apps/src/modules/app/api/app.h
+#	dk_apps/src/modules/app/src/app.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_project.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_host_project.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_scheduler.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_scheduler.h
+#	dk_apps/src/modules/app/src/app_project/sps/system/app_sleep.h
+#	dk_apps/src/modules/app/src/app_project/sps/system/periph_setup.h
+#	dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.c
+#	dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.h
+#	dk_apps_01_09.zip
+#	dk_apps_01_09_II.zip
+#	dk_apps_01_13_before_pull.zip
+#	dk_apps_dsps_12_17.zip
+#	dk_apps_final_test.zip
+#	dk_apps_multiple_baud.zip
+#	dk_apps_v3.150.1.12.zip
+#	rhost_apps/android_ios/DSPS/platforms/android/AndroidManifest.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/cordova_plugins.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/css/index.css
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/css/jquery.mobile.min.css
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/css/search.css
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/DSPS.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/dot.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/exit.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/index.html
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/com.dialog-semiconductor/serial_port_profile.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/com.dialog-semiconductor/serial_port_service.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/index.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/jquery.min.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/jquery.mobile.min.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.bcsphere.cordova.utilities/bcutility.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bcsphere/bc.js
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/DSPS.apk
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes.dex
+#	rhost_apps/android_ios/DSPS/platforms/android/libs/da1458002_uuid-cordovalib.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/lint.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/project.properties
+#	rhost_apps/android_ios/DSPS/platforms/android/res/xml/config.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/src/com/dialog_semiconductor/dsps/DSPS.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/ContentFilesystem.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/FileUtils.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/Filesystem.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/LocalFilesystem.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/LocalFilesystemURL.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/BCBluetooth.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/BluetoothG43plus.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/BluetoothSerialService.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/utilities/BCUtility.java
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVPlugin.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVShared.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVViewController.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/VERSION
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/cordova.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/project.pbxproj
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/project.xcworkspace/xcuserdata/NPHD.xcuserdatad/UserInterfaceState.xcuserstate
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/AppDelegate.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/AppDelegate.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/BCWebViewController.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/BCWebViewController.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/MainViewController.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/MainViewController.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/MainViewController.xib
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/DSPS-Info.plist
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/DSPS-Prefix.pch
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/BCUtility.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/BCUtility.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/org.bcsphere.bluetooth/BCBluetooth.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/org.bcsphere.bluetooth/BCBluetooth.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/de.lproj/Localizable.strings
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/en.lproj/Localizable.strings
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/es.lproj/Localizable.strings
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/se.lproj/Localizable.strings
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/bin/DSPS.ipa
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/config.xml
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/main.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/Default-568h@2x.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/build
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/copy-www-build-step.sh
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/install-emulator
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/list-emulator-images
+#	rhost_apps/android_ios/DSPS/platforms/ios/platform_www/cordova.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/css/clear.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/css/index.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/css/jquery.mobile.min.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/css/search.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/css/service.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/2.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/DSPS.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/active.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/aperture.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/arrow.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/bg.jpg
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/check.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/checked.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/cssSprite.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/default.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/deg.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/dot.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/exit.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/left-r.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/reloadBtn.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/searchRotate.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/singal_active.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/singal_default.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/img/stopSearch.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/index.html
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/DirectoryEntry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/DirectoryReader.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/Entry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/File.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/FileEntry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/FileError.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/FileReader.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/FileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/FileUploadOptions.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/FileUploadResult.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/FileWriter.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/Flags.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/LocalFileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/Metadata.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/ProgressEvent.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/com.dialog-semiconductor/serial_port_profile.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/com.dialog-semiconductor/serial_port_service.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/fileSystemPaths.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/fileSystems-roots.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/fileSystems.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/index.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/ios/FileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/jquery.min.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/jquery.mobile.min.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/org.bcsphere.bluetooth/bluetoothapi.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/org.bcsphere.cordova.utilities/bcutility.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/org.bcsphere/bc.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/org.underscorejs.underscore/underscore.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/requestFileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/assets/js/resolveLocalFileSystemURI.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/cordova.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/cordova_plugins.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/.fetch.json
+#	rhost_apps/android_ios/DSPS/www/css/index.css
+#	rhost_apps/android_ios/DSPS/www/img/logo.png
+#	rhost_apps/android_ios/DSPS/www/index.html
+#	rhost_apps/android_ios/DSPS/www/js/index.js
+#	rhost_apps/android_ios/license.txt
+#	rhost_apps/bin/iOS/DSPS.ipa
+#	rhost_apps_3.150.1.7.zip
+Comment:
+
+      FEATURE
+    
+      1. Support multiple baud rates:115200, 57600, 38400, 19200, 9600
+      2. Add new Android and iOS DSPS apps.
+    
+      FIX
+    
+      1. Fix error with uart driver in sleep mode. Rewrite sleep entrance and
+      flow of procedure
+
+
+===========================================================================
+Date: 17/12/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.12
+#
+#Files
+#	dk_apps/keil_projects/sps/sps_device/sps_device.uvopt
+#	dk_apps/keil_projects/sps/sps_device/sps_device.uvproj
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_proj_task.h
+Comment:
+
+      fix compilation error
+
+
+===========================================================================
+Date: 17/12/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.11
+#
+#Files
+#	dk_apps/keil_projects/sps/sps_host/sps_host.uvopt
+#	dk_apps/keil_projects/sps/sps_host/sps_host.uvproj
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_project.c
+#	dk_apps/src/modules/app/src/app_task.c
+Comment:
+
+
+
+===========================================================================
+Date: 17/12/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.10
+#
+#Files
+#	dk_apps/keil_projects/sps/sps_device/da14580_config.h
+#	dk_apps/keil_projects/sps/sps_device/da14580_scatter_config.h
+#	dk_apps/keil_projects/sps/sps_device/da14580_stack_config.h
+#	dk_apps/keil_projects/sps/sps_device/sps_device.uvopt
+#	dk_apps/keil_projects/sps/sps_device/sps_device.uvproj
+#	dk_apps/keil_projects/sps/sps_device_fh/da14580_config.h
+#	dk_apps/keil_projects/sps/sps_device_fh/da14580_scatter_config.h
+#	dk_apps/keil_projects/sps/sps_device_fh/da14580_stack_config.h
+#	dk_apps/keil_projects/sps/sps_device_fh/sps_device_fh.uvopt
+#	dk_apps/keil_projects/sps/sps_device_fh/sps_device_fh.uvproj
+#	dk_apps/keil_projects/sps/sps_host/da14580_config.h
+#	dk_apps/keil_projects/sps/sps_host/da14580_scatter_config.h
+#	dk_apps/keil_projects/sps/sps_host/da14580_stack_config.h
+#	dk_apps/keil_projects/sps/sps_host/sps_host.uvopt
+#	dk_apps/keil_projects/sps/sps_host/sps_host.uvproj
+#	dk_apps/keil_projects/sps/sps_host_fh/da14580_config.h
+#	dk_apps/keil_projects/sps/sps_host_fh/da14580_scatter_config.h
+#	dk_apps/keil_projects/sps/sps_host_fh/da14580_stack_config.h
+#	dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvopt
+#	dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvproj
+#	dk_apps/src/modules/app/api/app.h
+#	dk_apps/src/modules/app/api/app_task_handlers.h
+#	dk_apps/src/modules/app/src/app.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_proj_task.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_project.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_project.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_host_proj_task.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_host_project.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_host_project.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_scheduler.c
+#	dk_apps/src/modules/app/src/app_project/sps/system/periph_setup.c
+#	dk_apps/src/modules/app/src/app_project/sps/system/periph_setup.h
+#	dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.c
+#	dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.h
+#	dk_apps/src/modules/app/src/app_task.c
+Comment:
+Merge: dab28d8 f314551
+
+
+
+     Clean code, fix coe styling rename projects and output file names, etc.
+
+
+===========================================================================
+Date: 16/12/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.9
+#
+#Files
+#	dk_apps/keil_projects/sps/sps_device_fh/da14580_config.h
+#	dk_apps/keil_projects/sps/sps_device_fh/sps_device_fh.uvopt
+#	dk_apps/keil_projects/sps/sps_device_fh/sps_device_fh.uvproj
+#	dk_apps/keil_projects/sps/sps_host_fh/da14580_config.h
+#	dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvopt
+#	dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvproj
+Comment:
+
+      FEATURE
+    
+      Commit new project and project configuration file.
+
+
+===========================================================================
+Date: 16/12/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.8
+#
+#Files
+#	dk_apps/src/modules/app/api/app.h
+#	dk_apps/src/modules/app/api/app_api.h
+#	dk_apps/src/modules/app/api/app_sw_version.h
+#	dk_apps/src/modules/app/api/app_task_handlers.h
+#	dk_apps/src/modules/app/src/app.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_proj_task.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_project.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_device_project.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_host_proj_task.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_host_project.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_host_project.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_proj.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_proj.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_proj_task.h
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_scheduler.c
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_scheduler.h
+#	dk_apps/src/modules/app/src/app_project/sps/system/app_sleep.h
+#	dk_apps/src/modules/app/src/app_project/sps/system/periph_setup.c
+#	dk_apps/src/modules/app/src/app_project/sps/system/periph_setup.h
+#	dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.c
+#	dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.h
+#	dk_apps/src/modules/app/src/app_task.c
+#	dk_apps/src/modules/app/src/app_utils/app_stream_queue/app_stream_queue.c
+#	dk_apps/src/modules/app/src/app_utils/app_stream_queue/app_stream_queue.h
+Comment:
+
+      FEATURE
+    
+      Major changes:
+    
+      1. Suppoert of extended sleep mode.
+      2. Support of H/W flow control on UART iface.
+      3. Tx data with 128 bytes transactions.
+      4. Restructure code organisation.
+
+
+===========================================================================
+Date: 05/11/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.7
+#
+#Files
+#	rhost_apps/android/DSPS/bin/DSPS.apk
+#	rhost_apps/android_ios/DSPS/bin/IOS/++++DSPS/DSPS_nosubscribe.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/++++DSPS/DSPS_subscribe.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/BCSphere.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/DSPS_NoSubscribe.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/DSPS_No_Subscribe_Flow.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/DSPS_Subscribe_FllowControl.ipa
+#	rhost_apps/android_ios/DSPS/bin/IOS/DSPS_With_Subscribe_Flow.ipa
+#	rhost_apps/android_ios/DSPS/config.xml
+#	rhost_apps/android_ios/DSPS/hooks/README.md
+#	rhost_apps/android_ios/DSPS/platforms/android/.classpath
+#	rhost_apps/android_ios/DSPS/platforms/android/.project
+#	rhost_apps/android_ios/DSPS/platforms/android/.settings/org.eclipse.core.resources.prefs
+#	rhost_apps/android_ios/DSPS/platforms/android/.settings/org.eclipse.jdt.core.prefs
+#	rhost_apps/android_ios/DSPS/platforms/android/AndroidManifest.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/cordova.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/cordova_plugins.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/css/clear.css
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/css/index.css
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/css/search.css
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/css/service.css
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/2.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/active.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/aperture.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/arrow.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/bg.jpg
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/check.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/checked.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/cssSprite.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/default.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/deg.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/left-r.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/reloadBtn.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/searchRotate.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/singal_active.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/singal_default.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/img/stopSearch.png
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/index.html
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/com.dialog-semiconductor/serial_port_profile.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/com.dialog-semiconductor/serial_port_service.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/index.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/js/jquery-1.7.1.min.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/DirectoryReader.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Entry.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/File.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileEntry.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileError.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileReader.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileUploadResult.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/FileWriter.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Flags.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/Metadata.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/ProgressEvent.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/android/FileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/fileSystems.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/requestFileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bcsphere.bluetooth/bluetoothapi.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bcsphere.ibeacon/ibeaconapi.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bcsphere/bc.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bcsphere/ibeacon.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.profile/find_me.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.profile/proximity.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.profile/serial_port.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.service/battery_service.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.service/blood_pressure.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.service/health_thermometer.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.service/immediate_alert.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.service/link_loss.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.service/serial_port.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.bluetooth.service/tx_power.js
+#	rhost_apps/android_ios/DSPS/platforms/android/assets/www/plugins/org/www/org.underscorejs.underscore/underscore.js
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/AndroidManifest.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/DSPS.apk
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/R.txt
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes.dex
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/BuildConfig.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/DSPS.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R$attr.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R$drawable.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R$string.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R$xml.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/com/dialog_semiconductor/dsps/R.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/ContentFilesystem.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/DirectoryManager.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/EncodingException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileExistsException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileHelper.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$10.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$11.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$12.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$13.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$14.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$15.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$16.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$17.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$18.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$19.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$2.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$20.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$21.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$22.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$23.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$24.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$25.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$3.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$4.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$5.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$6.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$7.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$8.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$9.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils$FileOp.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/FileUtils.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/Filesystem$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/Filesystem$LimitedInputStream.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/Filesystem$ReadFileCallback.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/Filesystem.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/InvalidModificationException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/LocalFilesystem.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/LocalFilesystemURL.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/NoModificationAllowedException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/apache/cordova/file/TypeMismatchException.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BCBluetooth$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BCBluetooth$2.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BCBluetooth.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothG43plus$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothG43plus$2.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothG43plus$3.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothG43plus.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSam42$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSam42$2.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSam42$3.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSam42.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService$1.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService$AcceptThread.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService$ConnectThread.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService$ConnectedThread.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/BluetoothSerialService.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/IBluetooth.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/tools/BluetoothDetection.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/classes/org/bcsphere/bluetooth/tools/Tools.class
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/dexedLibs/dsps-cordovalib-4da86096a3b1faeb95502f10c41af1ac.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/dexedLibs/dsps-cordovalib-5692d49c2aa09932ea001537de66dc64.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/dexedLibs/samsung_ble_sdk_200-468f575791c7856279fff2eaaf56e962.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/dexedLibs/samsung_ble_sdk_200-6d871c5b33dcc40d0f1af3b97ff74e07.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/jarlist.cache
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/res/crunch/drawable-xhdpi/icon.png
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/res/crunch/drawable/icon.png
+#	rhost_apps/android_ios/DSPS/platforms/android/bin/resources.ap_
+#	rhost_apps/android_ios/DSPS/platforms/android/build.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/android_sdk_version
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/build
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/build.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/check_reqs
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/clean
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/clean.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/defaults.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/android_sdk_version.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/appinfo.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/build.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/check_reqs.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/clean.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/device.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/emulator.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/exec.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/install-device
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/install-device.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/install-emulator
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/install-emulator.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/list-devices
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/list-devices.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/list-emulator-images
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/list-emulator-images.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/list-started-emulators
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/list-started-emulators.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/log.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/run.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/spawn.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/start-emulator
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/lib/start-emulator.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/log
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/log.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/q/CONTRIBUTING.md
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/q/LICENSE
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/q/README.md
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/q/benchmark/compare-with-callbacks.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/q/benchmark/scenarios.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/q/package.json
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/q/q.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/q/queue.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/.documentup.json
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/.jshintrc
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/.npmignore
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/.travis.yml
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/LICENSE
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/README.md
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/bin/shjs
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/global.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/make.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/package.json
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/scripts/generate-docs.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/scripts/run-tests.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/shell.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/cat.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/cd.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/chmod.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/common.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/cp.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/dirs.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/echo.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/error.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/exec.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/find.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/grep.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/ls.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/mkdir.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/mv.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/popd.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/pushd.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/pwd.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/rm.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/sed.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/tempdir.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/test.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/to.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/toEnd.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/node_modules/shelljs/src/which.js
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/run
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/run.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/version
+#	rhost_apps/android_ios/DSPS/platforms/android/cordova/version.bat
+#	rhost_apps/android_ios/DSPS/platforms/android/custom_rules.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/gen/com/dialog_semiconductor/dsps/BuildConfig.java
+#	rhost_apps/android_ios/DSPS/platforms/android/gen/com/dialog_semiconductor/dsps/R.java
+#	rhost_apps/android_ios/DSPS/platforms/android/libs/dsps-cordovalib.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/libs/samsung_ble_sdk_200.jar
+#	rhost_apps/android_ios/DSPS/platforms/android/local.properties
+#	rhost_apps/android_ios/DSPS/platforms/android/platform_www/cordova.js
+#	rhost_apps/android_ios/DSPS/platforms/android/proguard-project.txt
+#	rhost_apps/android_ios/DSPS/platforms/android/project.properties
+#	rhost_apps/android_ios/DSPS/platforms/android/res/drawable-xhdpi/icon.png
+#	rhost_apps/android_ios/DSPS/platforms/android/res/drawable/icon.png
+#	rhost_apps/android_ios/DSPS/platforms/android/res/values/strings.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/res/xml/config.xml
+#	rhost_apps/android_ios/DSPS/platforms/android/src/com/dialog_semiconductor/dsps/DSPS.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/ContentFilesystem.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/DirectoryManager.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/EncodingException.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/FileExistsException.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/FileHelper.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/FileUtils.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/Filesystem.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/InvalidModificationException.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/LocalFilesystem.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/LocalFilesystemURL.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/NoModificationAllowedException.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/apache/cordova/file/TypeMismatchException.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/BCBluetooth.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/BluetoothG43plus.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/BluetoothSam42.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/BluetoothSerialService.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/IBluetooth.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/tools/BluetoothDetection.java
+#	rhost_apps/android_ios/DSPS/platforms/android/src/org/bcsphere/bluetooth/tools/Tools.java
+#	rhost_apps/android_ios/DSPS/platforms/ios/.gitignore
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDV.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVAvailability.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVDebug.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVJSON.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVJSON.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVPlugin.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVPlugin.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVShared.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVShared.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVTimer.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVTimer.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVViewController.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVViewController.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/NSData+Base64.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/NSData+Base64.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/CordovaLib.xcodeproj/project.pbxproj
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/NPHD.xcuserdatad/xcschemes/CordovaLib.xcscheme
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/NPHD.xcuserdatad/xcschemes/xcschememanagement.plist
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/VERSION
+#	rhost_apps/android_ios/DSPS/platforms/ios/CordovaLib/cordova.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/project.pbxproj
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/project.xcworkspace/xcuserdata/NPHD.xcuserdatad/UserInterfaceState.xcuserstate
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/xcuserdata/NPHD.xcuserdatad/xcschemes/DSPS.xcscheme
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS.xcodeproj/xcuserdata/NPHD.xcuserdatad/xcschemes/xcschememanagement.plist
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/.gitignore
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/AppDelegate.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/AppDelegate.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/MainViewController.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/MainViewController.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Classes/MainViewController.xib
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/DSPS-Info.plist
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/DSPS-Prefix.pch
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/BCBluetooth.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/BCBluetooth.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/CDVAssetLibraryFilesystem.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/CDVAssetLibraryFilesystem.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/CDVFile.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/CDVFile.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/CDVLocalFilesystem.h
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/CDVLocalFilesystem.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Plugins/README
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/de.lproj/Localizable.strings
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/en.lproj/Localizable.strings
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/es.lproj/Localizable.strings
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-40.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-40@2x.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-50.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-50@2x.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-60.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-60@2x.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-72.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-72@2x.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-76.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-76@2x.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-small.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon-small@2x.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/icons/icon@2x.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/se.lproj/Localizable.strings
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-568h@2x~iphone.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-Landscape@2x~ipad.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-Landscape~ipad.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-Portrait@2x~ipad.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default-Portrait~ipad.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default@2x~iphone.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/Resources/splash/Default~iphone.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/config.xml
+#	rhost_apps/android_ios/DSPS/platforms/ios/DSPS/main.m
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/apple_ios_version
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/apple_osx_version
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/apple_xcode_version
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/build
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/build.xcconfig
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/check_reqs
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/clean
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/defaults.xml
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/emulate
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/copy-www-build-step.sh
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/install-device
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/install-emulator
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/list-devices
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/list-emulator-images
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/list-started-emulators
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/sim.applescript
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/lib/start-emulator
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/log
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/run
+#	rhost_apps/android_ios/DSPS/platforms/ios/cordova/version
+#	rhost_apps/android_ios/DSPS/platforms/ios/platform_www/cordova.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/cordova.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/cordova_plugins.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/css/clear.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/css/index.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/css/search.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/css/service.css
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/2.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/active.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/aperture.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/arrow.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/bg.jpg
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/check.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/checked.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/cssSprite.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/default.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/deg.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/left-r.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/reloadBtn.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/searchRotate.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/singal_active.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/singal_default.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/img/stopSearch.png
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/index.html
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/js/com.dialog-semiconductor/serial_port_profile.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/js/com.dialog-semiconductor/serial_port_service.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/js/index.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/js/jquery-1.7.1.min.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/DirectoryEntry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/DirectoryReader.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/Entry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/File.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileEntry.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileError.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileReader.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileUploadOptions.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileUploadResult.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/FileWriter.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/Flags.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/LocalFileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/Metadata.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/ProgressEvent.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystemPaths.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystems-roots.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/fileSystems.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/ios/FileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/requestFileSystem.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bcsphere.bluetooth/bluetoothapi.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bcsphere.ibeacon/ibeaconapi.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bcsphere/bc.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bcsphere/ibeacon.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.profile/find_me.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.profile/proximity.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.profile/serial_port.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/battery_service.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/blood_pressure.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/health_thermometer.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/immediate_alert.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/link_loss.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/serial_port.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.bluetooth.service/tx_power.js
+#	rhost_apps/android_ios/DSPS/platforms/ios/www/plugins/org/www/org.underscorejs.underscore/underscore.js
+#	rhost_apps/android_ios/DSPS/plugins/android.json
+#	rhost_apps/android_ios/DSPS/plugins/ios.json
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/.fetch.json
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/CONTRIBUTING.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/LICENSE
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/NOTICE
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/README.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/RELEASENOTES.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/de/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/de/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/es/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/es/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/fr/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/fr/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/it/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/it/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/ja/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/ja/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/ko/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/ko/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/pl/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/pl/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/ru/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/ru/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/zh/index.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/doc/zh/plugins.md
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/package.json
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/plugin.xml
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/ContentFilesystem.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/DirectoryManager.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/EncodingException.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/FileExistsException.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/FileHelper.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/FileUtils.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/Filesystem.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/InvalidModificationException.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/LocalFilesystem.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/LocalFilesystemURL.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/NoModificationAllowedException.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/android/TypeMismatchException.java
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/blackberry10/index.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/firefoxos/FileProxy.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/ios/CDVAssetLibraryFilesystem.h
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/ios/CDVAssetLibraryFilesystem.m
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/ios/CDVFile.h
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/ios/CDVFile.m
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/ios/CDVLocalFilesystem.h
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/ios/CDVLocalFilesystem.m
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/ubuntu/file.cpp
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/ubuntu/file.h
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/windows/FileProxy.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/windows8/FileProxy.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/src/wp/File.cs
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/tests/plugin.xml
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/tests/tests.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/DirectoryEntry.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/DirectoryReader.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/Entry.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/File.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/FileEntry.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/FileError.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/FileReader.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/FileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/FileUploadOptions.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/FileUploadResult.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/FileWriter.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/Flags.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/LocalFileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/Metadata.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/ProgressEvent.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/android/FileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/FileProxy.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/FileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/copyTo.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/createEntryFromNative.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/getDirectory.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/getFile.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/getFileMetadata.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/getMetadata.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/getParent.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/info.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/moveTo.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/readAsArrayBuffer.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/readAsBinaryString.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/readAsDataURL.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/readAsText.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/readEntries.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/remove.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/removeRecursively.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/requestAllFileSystems.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/requestAnimationFrame.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/requestFileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/resolveLocalFileSystemURI.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/setMetadata.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/truncate.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/blackberry10/write.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/fileSystemPaths.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/fileSystems-roots.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/fileSystems.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/firefoxos/FileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/ios/FileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/requestFileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/resolveLocalFileSystemURI.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/ubuntu/FileSystem.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/ubuntu/FileWriter.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/ubuntu/fileSystems-roots.js
+#	rhost_apps/android_ios/DSPS/plugins/org.apache.cordova.file/www/wp/FileUploadOptions.js
+#	rhost_apps/android_ios/DSPS/plugins/org/.fetch.json
+#	rhost_apps/android_ios/DSPS/plugins/org/LICENSE
+#	rhost_apps/android_ios/DSPS/plugins/org/README.md
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/BC.FindMeProfile.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/BC.ImmediateAlertService.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/BC.LinkLossService.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/BC.ProximityProfile.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/BC.SerialPortProfile.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/BC.SerialPortService.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/BC.TxPowerService.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/BC.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/Bluetooth.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/Characteristic.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/DataValue.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/Descriptor.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/Device.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/Plugin.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/Profile.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/Service.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/bc.js.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/find_me.js.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/global.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/immediate_alert.js.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/index.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/link_loss.js.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/proximity.js.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/scripts/linenumber.js
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/scripts/prettify/Apache-License-2.0.txt
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/scripts/prettify/lang-css.js
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/scripts/prettify/prettify.js
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/serial_port.js.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/serial_port.js_.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/styles/jsdoc-default.css
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/styles/prettify-jsdoc.css
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/styles/prettify-tomorrow.css
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/supportplatforms.html
+#	rhost_apps/android_ios/DSPS/plugins/org/docs/tx_power.js.html
+#	rhost_apps/android_ios/DSPS/plugins/org/libs/samsung_ble_sdk_200.jar
+#	rhost_apps/android_ios/DSPS/plugins/org/others/HTC/BluetoothHTC41.java
+#	rhost_apps/android_ios/DSPS/plugins/org/others/HTC/com.htc.android.bluetooth.le.jar
+#	rhost_apps/android_ios/DSPS/plugins/org/package.json
+#	rhost_apps/android_ios/DSPS/plugins/org/plugin.xml
+#	rhost_apps/android_ios/DSPS/plugins/org/src/android/org/bcsphere/bluetooth/BCBluetooth.java
+#	rhost_apps/android_ios/DSPS/plugins/org/src/android/org/bcsphere/bluetooth/BluetoothG43plus.java
+#	rhost_apps/android_ios/DSPS/plugins/org/src/android/org/bcsphere/bluetooth/BluetoothSam42.java
+#	rhost_apps/android_ios/DSPS/plugins/org/src/android/org/bcsphere/bluetooth/BluetoothSerialService.java
+#	rhost_apps/android_ios/DSPS/plugins/org/src/android/org/bcsphere/bluetooth/IBluetooth.java
+#	rhost_apps/android_ios/DSPS/plugins/org/src/android/org/bcsphere/bluetooth/tools/BluetoothDetection.java
+#	rhost_apps/android_ios/DSPS/plugins/org/src/android/org/bcsphere/bluetooth/tools/Tools.java
+#	rhost_apps/android_ios/DSPS/plugins/org/src/ios/BCBluetooth.h
+#	rhost_apps/android_ios/DSPS/plugins/org/src/ios/BCBluetooth.m
+#	rhost_apps/android_ios/DSPS/plugins/org/src/ios/BCIBeacon.h
+#	rhost_apps/android_ios/DSPS/plugins/org/src/ios/BCIBeacon.m
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bcsphere.bluetooth/bluetoothapi.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bcsphere.ibeacon/ibeaconapi.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bcsphere/bc.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bcsphere/ibeacon.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.profile/find_me.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.profile/proximity.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.profile/serial_port.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.service/battery_service.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.service/blood_pressure.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.service/health_thermometer.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.service/immediate_alert.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.service/link_loss.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.service/serial_port.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.bluetooth.service/tx_power.js
+#	rhost_apps/android_ios/DSPS/plugins/org/www/org.underscorejs.underscore/underscore.js
+#	rhost_apps/android_ios/DSPS/www/css/clear.css
+#	rhost_apps/android_ios/DSPS/www/css/index.css
+#	rhost_apps/android_ios/DSPS/www/css/search.css
+#	rhost_apps/android_ios/DSPS/www/css/service.css
+#	rhost_apps/android_ios/DSPS/www/img/2.png
+#	rhost_apps/android_ios/DSPS/www/img/active.png
+#	rhost_apps/android_ios/DSPS/www/img/aperture.png
+#	rhost_apps/android_ios/DSPS/www/img/arrow.png
+#	rhost_apps/android_ios/DSPS/www/img/bg.jpg
+#	rhost_apps/android_ios/DSPS/www/img/check.png
+#	rhost_apps/android_ios/DSPS/www/img/checked.png
+#	rhost_apps/android_ios/DSPS/www/img/cssSprite.png
+#	rhost_apps/android_ios/DSPS/www/img/default.png
+#	rhost_apps/android_ios/DSPS/www/img/deg.png
+#	rhost_apps/android_ios/DSPS/www/img/left-r.png
+#	rhost_apps/android_ios/DSPS/www/img/reloadBtn.png
+#	rhost_apps/android_ios/DSPS/www/img/searchRotate.png
+#	rhost_apps/android_ios/DSPS/www/img/singal_active.png
+#	rhost_apps/android_ios/DSPS/www/img/singal_default.png
+#	rhost_apps/android_ios/DSPS/www/img/stopSearch.png
+#	rhost_apps/android_ios/DSPS/www/index.html
+#	rhost_apps/android_ios/DSPS/www/js/com.dialog-semiconductor/serial_port_profile.js
+#	rhost_apps/android_ios/DSPS/www/js/com.dialog-semiconductor/serial_port_service.js
+#	rhost_apps/android_ios/DSPS/www/js/index.js
+#	rhost_apps/android_ios/DSPS/www/js/jquery-1.7.1.min.js
+#	rhost_apps/bin/android/DSPS/DSPS.apk
+Comment:
+
+       1. Add source code for android and iOS DSPS applications.
+       2. Update android executable
+
+
+===========================================================================
+Date: 04/11/2014
+Committed by: Emmanouil Damaskakos
+Type: FEATURE
+ver: 3.150.1.6
+#
+#Files
+#	rhost_apps/android/DSPS/bin/DSPS.apk
+Comment:
+
+    Added remote host application to reference design
+
+
+===========================================================================
+Date: 21/10/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.5
+#
+#Files
+#	dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvopt
+#	dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvproj
+#	dk_apps/src/modules/app/src/app_task.c
+Comment:
+
+      1. Fixing include path in host project
+      2. Fix string compare in gapm_adv_report_ind_handler
+
+
+===========================================================================
+Date: 20/10/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.4
+#
+#Files
+#	dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.c
+#	dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.h
+Comment:
+
+      Fix code styling
+
+
+===========================================================================
+Date: 20/10/2014
+Committed by: Konstantinos Dagres
+Type: FEATURE
+ver: 3.150.1.3
+#
+#Files
+#	dk_apps/keil_projects/sps/sps_device_fh/da14580_scatter_config.h
+#	dk_apps/keil_projects/sps/sps_device_fh/sps_device_fh.uvopt
+#	dk_apps/keil_projects/sps/sps_device_fh/sps_device_fh.uvproj
+#	dk_apps/keil_projects/sps/sps_host_fh/da14580_scatter_config.h
+#	dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvopt
+#	dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvproj
+#	dk_apps/src/modules/app/src/app_project/sps/app_sps_proj.h
+#	dk_apps/src/modules/app/src/app_task.c
+Comment:
+
+      Fixes regarding the scatter file configuration.
+
+
+===========================================================================
+Date: 17/10/2014
+Committed by: 
+Type: FEATURE
+ver: 3.150.1.2
+#
+#Files
+#dk_apps/keil_projects/sps/sps_device_fh/da14580_config.h
+#dk_apps/keil_projects/sps/sps_device_fh/da14580_scatter_config.h
+#dk_apps/keil_projects/sps/sps_device_fh/da14580_stack_config.h
+#dk_apps/keil_projects/sps/sps_device_fh/sps_device_fh.uvopt
+#dk_apps/keil_projects/sps/sps_device_fh/sps_device_fh.uvproj
+#dk_apps/keil_projects/sps/sps_host_fh/da14580_config.h
+#dk_apps/keil_projects/sps/sps_host_fh/da14580_scatter_config.h
+#dk_apps/keil_projects/sps/sps_host_fh/da14580_stack_config.h
+#dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvopt
+#dk_apps/keil_projects/sps/sps_host_fh/sps_host_fh.uvproj
+#dk_apps/src/modules/app/api/app.h
+#dk_apps/src/modules/app/api/app_api.h
+#dk_apps/src/modules/app/api/app_sec.h
+#dk_apps/src/modules/app/api/app_sec_task.h
+#dk_apps/src/modules/app/api/app_sw_version.h
+#dk_apps/src/modules/app/api/app_task.h
+#dk_apps/src/modules/app/api/app_task_handlers.h
+#dk_apps/src/modules/app/src/app.c
+#dk_apps/src/modules/app/src/app_project/sps/app_sps_proj.c
+#dk_apps/src/modules/app/src/app_project/sps/app_sps_proj.h
+#dk_apps/src/modules/app/src/app_project/sps/app_sps_proj_task.h
+#dk_apps/src/modules/app/src/app_project/sps/system/app_sleep.h
+#dk_apps/src/modules/app/src/app_project/sps/system/periph_setup.c
+#dk_apps/src/modules/app/src/app_project/sps/system/periph_setup.h
+#dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.c
+#dk_apps/src/modules/app/src/app_project/sps/uart/uart_sps.h
+#dk_apps/src/modules/app/src/app_sec.c
+#dk_apps/src/modules/app/src/app_sec_task.c
+#dk_apps/src/modules/app/src/app_task.c
+#dk_apps/src/modules/app/src/app_utils/app_console/app_console.c
+#dk_apps/src/modules/app/src/app_utils/app_console/app_console.h
+#dk_apps/src/modules/app/src/app_utils/app_multi_bond/app_multi_bond.c
+#dk_apps/src/modules/app/src/app_utils/app_multi_bond/app_multi_bond.h
+#dk_apps/src/modules/app/src/app_utils/app_stream_queue/app_stream_queue.c
+#dk_apps/src/modules/app/src/app_utils/app_stream_queue/app_stream_queue.h
+#
+Comment:
+
+	Initial Version

@@ -1,0 +1,6 @@
+DSPS LICENSES
+
+
+DSPS 					rhost_apps\android_ios\DSPS										Apache License Version 2.0, January 2004
+																						Copyright (c) 2012, Artur Adib <aadib@mozilla.com>
+																						Copyright 2009–2012 Kristopher Michael Kowal

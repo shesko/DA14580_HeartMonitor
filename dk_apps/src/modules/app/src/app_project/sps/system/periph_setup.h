@@ -48,7 +48,16 @@
 #define SPI_PHA_MODE   1       // If same with SPI_POL_MODE, data are valid on clk high edge, else on low
 #define SPI_MINT_EN    0       // (SPI interrupt to the ICU) 0: Disabled, 1: Enabled
 #define SPI_CLK_DIV    2       // (SPI clock divider) 0: 8, 1: 4, 2: 2, 3: 14
-#define SPI_CS_PIN     3       // Define Chip Select pin
+
+
+
+//GPIO Settings
+
+		#define SPI_GPIO_PORT  GPIO_PORT_0 
+        #define SPI_CLK_PIN    GPIO_PIN_0
+        #define SPI_CS_PIN     GPIO_PIN_3
+        #define SPI_DI_PIN     GPIO_PIN_5
+        #define SPI_DO_PIN     GPIO_PIN_6      
 
 
 /****************************************************************************************/ 
@@ -58,9 +67,9 @@
     #define UART1_TX_PORT   GPIO_PORT_0
     #define UART1_TX_PIN    GPIO_PIN_4
     #define UART1_RX_PORT   GPIO_PORT_0
-    #define UART1_RX_PIN    GPIO_PIN_5
+    #define UART1_RX_PIN    GPIO_PIN_7
     #define UART1_RTS_PORT  GPIO_PORT_0
-    #define UART1_RTS_PIN   GPIO_PIN_3
+    #define UART1_RTS_PIN   GPIO_PIN_1
     #define UART1_CTS_PORT  GPIO_PORT_0
     #define UART1_CTS_PIN   GPIO_PIN_2
 

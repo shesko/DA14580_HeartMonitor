@@ -68,6 +68,13 @@ i.e.
 void set_pad_functions(void)        // set gpio port function mode
 {
 
+		
+
+   GPIO_ConfigurePin( SPI_GPIO_PORT, SPI_CS_PIN, OUTPUT, PID_SPI_EN, true );
+   GPIO_ConfigurePin( SPI_GPIO_PORT, SPI_CLK_PIN, OUTPUT, PID_SPI_CLK, false );
+   GPIO_ConfigurePin( SPI_GPIO_PORT, SPI_DO_PIN, OUTPUT, PID_SPI_DO, false );	
+   GPIO_ConfigurePin( SPI_GPIO_PORT, SPI_DI_PIN, INPUT, PID_SPI_DI, false );
+
 
     GPIO_ConfigurePin( UART1_TX_PORT, UART1_TX_PIN, OUTPUT, PID_UART1_TX, false );
     GPIO_ConfigurePin( UART1_RX_PORT, UART1_RX_PIN, INPUT_PULLUP, PID_UART1_RX, false );

@@ -16,6 +16,8 @@
  */
 
 #include <stdint.h>
+#include <stdlib.h>
+
 #include "global_io.h"
 #include "spi.h"
 #include <core_cm0.h>
@@ -46,6 +48,7 @@ void spi_cs_high(void)
 {
 	GPIO_SetActive(spi_driver_cs_pad.port, spi_driver_cs_pad.pin);		// push CS high
 }
+
 
 
 
